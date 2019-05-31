@@ -1,0 +1,6 @@
+from CosineSimilarityKernel import CosineSimilarityKernel
+from FourierKernel import FourierKernel
+from LinearKernel import LinearKernel
+from PolynomialKernel import PolynomialKernel
+from RBFKernel import RBFKernel
+from SplineKernel import SplineKernel
