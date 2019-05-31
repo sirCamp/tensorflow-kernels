@@ -11,8 +11,8 @@ class SplineKernel():
 
     def _compute(self, data_1, data_2):
 
-        if tf.math.greater_equal(tf.math.reduce_min(data_1), tf.constant(0, dtype=data_1.dtype)).eval(
-                session=tf.Session()) or tf.math.greater_equal(tf.math.reduce_min(data_2),
+        if not tf.math.greater_equal(tf.math.reduce_min(data_1), tf.constant(0, dtype=data_1.dtype)).eval(
+                session=tf.Session()) or not tf.math.greater_equal(tf.math.reduce_min(data_2),
                                                                tf.constant(0, dtype=data_2.dtype)).eval(
                 session=tf.Session()):
             raise ValueError('This kernel is a positive kernel!! Your elements must be all >=0')
