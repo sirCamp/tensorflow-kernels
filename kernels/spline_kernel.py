@@ -1,5 +1,10 @@
 import tensorflow as tf
 
+__author__ = "Stefano Campese"
+
+__version__ = "0.1"
+__maintainer__ = "Stefano Campese"
+__email__ = "sircampydevelop@gmail.com"
 
 class SplineKernel():
     """
