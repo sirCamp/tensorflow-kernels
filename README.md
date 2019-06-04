@@ -22,6 +22,19 @@ An Experimental Kernel have been added:
 **Attention:** Due to the GPUs usage the precision of decimal numbers may be different, and hence, the results may be slightly differs as well
 
 **Attention 2:** Due to exploit the power of GPUs it's strongly recommended to work with float32 or even in half precision float16.
+
+# Installation:
+from pip:
+```bash
+
+pip install tensorflow-kernels
+
+```
+from source:
+```
+pip install https://github.com/sirCamp/tensorflow-kernels/archive/master.zip
+
+```
 # Examples: 
 
 A simple example with ```PolynomialKernel```
