@@ -49,6 +49,7 @@ print(tensor_to_array(kernel, dtype=np.float32))
 ```
 
 A simple example with ```PSpectrumKernel```. 
+
 **Attention:** PSpectrum is still experimental and it exploits *eager computation* in order to work properly. 
 Furthermore it maybe won't works with Tensorflow 2.0 since some packages have been removed.
 
