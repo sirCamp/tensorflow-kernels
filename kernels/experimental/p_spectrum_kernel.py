@@ -6,7 +6,7 @@ import numpy as np
 
 __author__ = "Stefano Campese"
 
-__version__ = "0.1"
+__version__ = "0.1.1"
 __maintainer__ = "Stefano Campese"
 __email__ = "sircampydevelop@gmail.com"
 
@@ -24,7 +24,7 @@ class PSpectrumKernel():
         self._p = p
 
     def _compute(self, x, y):
-        self._dim = x.shape[1]
+        self._dim = x._rank()
         kernel = np.zeros((tf.size(x), tf.size(y)))
 
         for l in tf.range(start=0, limit=tf.size(x), delta=1, dtype=None, name='l_range'):
