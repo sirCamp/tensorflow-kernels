@@ -16,6 +16,9 @@ Actually the implemented kernels are:
 + Fourier
 + Spline
 
+An Experimental Kernel have been added:
++ PSpectrum
+
 **Attention:** Due to the GPUs usage the precision of decimal numbers may be different, and hence, the results may be slightly differs as well
 
 **Attention 2:** Due to exploit the power of GPUs it's strongly recommended to work with float32 or even in half precision float16.
