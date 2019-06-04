@@ -1,12 +1,15 @@
 import tensorflow as tf
 
+from kernels.base import BaseKernel
+
 __author__ = "Stefano Campese"
 
-__version__ = "0.1"
+__version__ = "0.1.2"
 __maintainer__ = "Stefano Campese"
 __email__ = "sircampydevelop@gmail.com"
 
-class SplineKernel():
+
+class SplineKernel(BaseKernel):
     """
     Spline kernel,
         K(x, y) = PROD_i 1 + x_iy_i + x_iy_i min(x_i,y_i)
@@ -71,4 +74,5 @@ class SplineKernel():
         return kernel
 
     def dim(self):
+        # TODO fix dim
         return None

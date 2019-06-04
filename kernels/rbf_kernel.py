@@ -1,14 +1,16 @@
 import numpy as np
 import tensorflow as tf
 
+from kernels.base import BaseKernel
+
 __author__ = "Stefano Campese"
 
-__version__ = "0.1"
+__version__ = "0.1.2"
 __maintainer__ = "Stefano Campese"
 __email__ = "sircampydevelop@gmail.com"
 
 
-class RBFKernel():
+class RBFKernel(BaseKernel):
     """
     Radial Basis Function kernel
         K(x, y) = e^(-g||x - y||^2)

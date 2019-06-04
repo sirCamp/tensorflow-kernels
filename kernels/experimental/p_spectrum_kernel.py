@@ -1,17 +1,20 @@
 import tensorflow as tf
 
+from kernels.base import BaseKernel
+
 tf.enable_eager_execution()
 tf.executing_eagerly()
+
 import numpy as np
 
 __author__ = "Stefano Campese"
 
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 __maintainer__ = "Stefano Campese"
 __email__ = "sircampydevelop@gmail.com"
 
 
-class PSpectrumKernel():
+class PSpectrumKernel(BaseKernel):
     """
     P-Spectrum  kernel, defined as weighted trasformation of subsequences. usefull for character embedding
         K(x, y) = = <Φp(x ), Φp(y)>.

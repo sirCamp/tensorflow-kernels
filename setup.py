@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 setup(
     name='tensorflow-kernels',
     packages=find_packages(exclude=['build', '_docs', 'templates']),
-    version='0.1',
+    version='0.1.2',
     license="MIT",
     description='A package with Tensorflow (both CPU and GPU) implementation of most popular Kernels for kernels methods (SVM, MKL...).',
     author="Campese Stefano",

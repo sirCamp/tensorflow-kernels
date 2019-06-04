@@ -1,13 +1,15 @@
 import tensorflow as tf
 
+from kernels.base import BaseKernel
+
 __author__ = "Stefano Campese"
 
-__version__ = "0.1"
+__version__ = "0.1.2"
 __maintainer__ = "Stefano Campese"
 __email__ = "sircampydevelop@gmail.com"
 
 
-class PolynomialKernel():
+class PolynomialKernel(BaseKernel):
     """
     Polynomial kernel, defined as a power of an affine transformation
         K(x, y) = (a<x, y> + b)^p

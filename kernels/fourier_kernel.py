@@ -1,13 +1,15 @@
 import tensorflow as tf
 
+from kernels.base import BaseKernel
+
 __author__ = "Stefano Campese"
 
-__version__ = "0.1"
+__version__ = "0.1.2"
 __maintainer__ = "Stefano Campese"
 __email__ = "sircampydevelop@gmail.com"
 
 
-class FourierKernel():
+class FourierKernel(BaseKernel):
     """
     Fourier kernel,
         K(x, y) = PROD_i (1-q^2)/(2(1-2q cos(x_i-y_i)+q^2))
